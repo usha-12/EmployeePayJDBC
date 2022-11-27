@@ -151,6 +151,7 @@ public class PayrollServiceDB {
             if (rowsAffected == 1) {
                 ResultSet resultSet = statement.getGeneratedKeys();
                 if (resultSet.next())
+
                     employeeId = resultSet.getInt(1);
             }
             employeePayrollData = new EmployeePayrollData(employeeId, name, gender, salary, startDate);
