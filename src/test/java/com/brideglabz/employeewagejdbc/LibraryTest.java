@@ -7,6 +7,7 @@ public class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
     }
+
     private void assertTrue(String s, Object someLibraryMethod) {
     }
 }
