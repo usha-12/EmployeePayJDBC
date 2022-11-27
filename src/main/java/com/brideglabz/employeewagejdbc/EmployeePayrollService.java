@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class EmployeePayrollService {
-    public PayrollServiceDB payrollServiceDB;
-    private Arrays employeePayrollList;
+    public List<EmployeePayrollData> employeePayrollList;
+    private PayrollServiceDB payrollServiceDB;
 
     public EmployeePayrollService() {
         super();
@@ -13,11 +13,11 @@ public class EmployeePayrollService {
     }
 
     public List<EmployeePayrollData> readEmployeePayrollData() throws EmployeePayrollException {
-        return this.payrollServiceDB.readData();
+        this.employeePayrollList = this.payrollServiceDB.readData();
+        return this.employeePayrollList;
     }
-
     public void updateEmployeeSalary(String name, double salary) throws EmployeePayrollException {
-        int result = new PayrollServiceDB().updateEmployeeDataUsingStatement(name, salary);
+        int result = new PayrollServiceDB().updateEmployeePayrollDataUsingPreparedStatement(name, salary);
         if (result == 0)
             return;
         EmployeePayrollData employeePayrollData = this.getEmployeePayrollData(name);
