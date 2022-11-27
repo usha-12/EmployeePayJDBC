@@ -2,9 +2,7 @@ package com.brideglabz.employeewagejdbc;
 
 import java.sql.*;
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import java.util.List;
+import java.util.*;
 
 public class PayrollServiceDB {
     private PreparedStatement preparedStatement;
@@ -123,4 +121,20 @@ public class PayrollServiceDB {
         }
     }
 
+    public Map<String, Double> performAverageAndMinAndMaxOperations(String column, String operation)
+            throws EmployeePayrollException {
+
+        String sql = String.format("SELECT gender,%s(%s) FROM employee_payroll GROUP BY gender;", operation, column);
+        Map<String, Double> mapValues = new HashMap<>();
+        try (Connection connection = this.getConnection()) {
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                mapValues.put(resultSet.getString(1), resultSet.getDouble(2));
+            }
+        } catch (SQLException e) {
+            throw new EmployeePayrollException("Connection Failed.");
+        }
+        return mapValues;
+    }
 }
