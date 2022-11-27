@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 public class EmployeePayrollServiceTest {
     @Test
@@ -43,6 +44,15 @@ public class EmployeePayrollServiceTest {
         LocalDate endDate = LocalDate.now();
         List<EmployeePayrollData> matchingRecords = employeePayrollService.getEmployeePayrollDataByStartDate(startDate,endDate);
         Assertions.assertEquals(matchingRecords.get(0), employeePayrollService.getEmployeePayrollData("Harry"));
+    }
+
+
+    @Test
+    public void givenEmployee_PerformedVariousOperations_ShouldGiveResult() throws EmployeePayrollException {
+        EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+        employeePayrollService.readEmployeePayrollData();
+        Map<String, Double> maxSalaryByGender = employeePayrollService.performOperationByGender("salary", "MAX");
+        Assertions.assertEquals(3000000.0, maxSalaryByGender.get("F"), 0.0);
     }
 
 
