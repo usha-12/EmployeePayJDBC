@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b2ff48a-79c3-40ba-b05e-475970f8b1c8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/PayrollServiceDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/PayrollServiceDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/employeewagejdbc/EmployeePayrollServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/employeewagejdbc/EmployeePayrollServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/brideglabz/employeewagejdbc/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/employeewagejdbc/LibraryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
