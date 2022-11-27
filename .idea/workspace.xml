@@ -4,11 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b2ff48a-79c3-40ba-b05e-475970f8b1c8" name="Changes" comment="" />
+    <list default="true" id="8b2ff48a-79c3-40ba-b05e-475970f8b1c8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/EmployeePayrollService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/brideglabz/employeewagejdbc/PayrollServiceDB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/employeewagejdbc/EmployeePayrollServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/brideglabz/employeewagejdbc/LibraryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2I8ti9VPKXvJhqXuZTrYYJ3wjZ7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -19,9 +46,37 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.brideglabz.employeewagejdbc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="EmployeePayrollServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="EmployeeWageDJBC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.brideglabz.employeewagejdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.brideglabz.employeewagejdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.brideglabz.employeewagejdbc.EmployeePayrollServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmployeePayrollServiceTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -32,5 +87,16 @@
       <updated>1669575165934</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
