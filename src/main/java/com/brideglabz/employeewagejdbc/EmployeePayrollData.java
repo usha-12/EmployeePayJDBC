@@ -22,4 +22,7 @@ public class EmployeePayrollData {
                 ", city='" + city + '\'' +
                 '}';
     }
+
+    public void setSalary(double salary) {
+    }
 }
