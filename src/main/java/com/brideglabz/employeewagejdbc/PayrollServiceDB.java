@@ -109,4 +109,18 @@ public class PayrollServiceDB {
             throw new EmployeePayrollException("Unable to prepare statement");
         }
     }
+
+    public List<EmployeePayrollData> getEmployeePayrollDataByStartingDate(LocalDate startDate, LocalDate endDate) throws EmployeePayrollException {
+        String sql = String.format(
+                "SELECT * FROM employee_payroll WHERE start BETWEEN cast('%s' as date) and cast('%s' as date);",
+                startDate.toString(), endDate.toString());
+        try (Connection connection = this.getConnection()) {
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(sql);
+            return this.getEmployeePayrollListFromResultset(resultSet);
+        } catch (SQLException e) {
+            throw new EmployeePayrollException("Connection Failed.");
+        }
+    }
+
 }

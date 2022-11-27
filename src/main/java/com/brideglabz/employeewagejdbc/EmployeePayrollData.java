@@ -19,10 +19,6 @@ public class EmployeePayrollData {
         this.startDate = startDate;
     }
 
-    public EmployeePayrollData(int id, String objectname, double salary, LocalDate start) {
-    }
-
-
     public int getId() {
         return id;
     }

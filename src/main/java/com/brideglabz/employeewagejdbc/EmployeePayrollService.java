@@ -1,5 +1,6 @@
 package com.brideglabz.employeewagejdbc;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class EmployeePayrollService {
             employeePayrollData.setSalary(salary);
     }
 
-    private EmployeePayrollData getEmployeePayrollData(String name) {
+    EmployeePayrollData getEmployeePayrollData(String name) {
         return this.employeePayrollList.stream()
                 .filter(employeePayrollObject -> employeePayrollObject.getName().equals(name)).findFirst().orElse(null);
     }
@@ -33,5 +34,10 @@ public class EmployeePayrollService {
     public boolean checkEmployeePayrollInSyncWithDB(String name) throws EmployeePayrollException {
         List<EmployeePayrollData> employeePayrollDataList = new PayrollServiceDB().getEmployeePayrollDataFromDB(name);
         return employeePayrollDataList.get(0).equals(getEmployeePayrollData(name));
+    }
+
+    public List<EmployeePayrollData> getEmployeePayrollDataByStartDate(LocalDate startDate, LocalDate endDate)
+            throws EmployeePayrollException {
+        return this.payrollServiceDB.getEmployeePayrollDataByStartingDate(startDate, endDate);
     }
 }
