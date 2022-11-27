@@ -19,6 +19,9 @@ public class EmployeePayrollData {
         this.startDate = startDate;
     }
 
+    public EmployeePayrollData(int employeeId, String name, String gender, double salary, LocalDate startDate) {
+    }
+
 
     public int getId() {
         return id;
