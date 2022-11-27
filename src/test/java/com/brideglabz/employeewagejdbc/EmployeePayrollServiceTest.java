@@ -14,4 +14,15 @@ public class EmployeePayrollServiceTest {
         Assertions.assertEquals(employeePayrollData.size(),5);
     }
 
+
+    @Test
+    public void givenNewSalaryForEmployee_WhenUpdated_ShouldSyncWithDB() throws EmployeePayrollException {
+        EmployeePayrollService employeePayrollService = new EmployeePayrollService();
+        List<EmployeePayrollData> employeePayrollData;
+        employeePayrollData = employeePayrollService.readEmployeePayrollData();
+        employeePayrollService.updateEmployeeSalary("nagraj", 3000000.00);
+        boolean result = employeePayrollService.checkEmployeePayrollInSyncWithDB("nagraj");
+    }
+
+
 }

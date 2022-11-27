@@ -49,4 +49,9 @@ public class PayrollServiceDB {
     }
 
 
+    public int updateEmployeeDataUsingStatement(String name, double salary) {
+    }
+
+    public List<EmployeePayrollData> getEmployeePayrollDataFromDB(String name) {
+    }
 }
